@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML JavaScript</title>
+</head>
+<body>
+
+	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1679185090206!2d-71.12082372513903!3d42.37444073419482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e377427d7f0199%3A0x5937c65cee2427f0!2sHarvard%20University!5e1!3m2!1sen!2smy!4v1765158712316!5m2!1sen!2smy" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+
+	<br>
+
+	<center><iframe src="https://free.timeanddate.com/clock/ia6uexo8/n195/szw210/szh210/hocf0f/hbw10/hfcf9f/cf100/hgr0/fas34/facfff/fnu2/fdi90/mqv0/mhc000/mhs3/mhl20/mhw1/mhd84/mmv0/hhs1/hms1/hsc000/hss1" frameborder="0" width="210" height="210"></iframe></center>
+
+
+	<h2>Javascript change content</h2>
+	<p id="hujan1">Hujan lebat, Hujan Panas</p>
+	<button type="button" onclick='document.getElementById("hujan1").innerHTML="I love you"'>Ketik Sini</button>
+
+	<h2>Javascript change style</h2>
+	<p id="style1">I use javascript doh</p>
+
+	<script>
+		function mystyle()
+		{
+			document.getElementById("style1").style.fontSize="40px";
+			document.getElementById("style1").style.color="yellow";
+			document.getElementById("style1").style.backgroundColor="black";
+			document.getElementById("style1").style.fontFamily="Lucida";
+		}
+	</script>
+
+	<button type="button" onclick="mystyle()">Tekey Sini</button>
+
+	<script>
+		function mykisah(n)
+		{
+			var pict;
+			if (n==1)
+			{
+				pict="image/puspa.png"
+			}
+			else
+			{
+				pict="image/aqil_1.jpeg"
+			}
+			document.getElementById('gambar').src=pict;
+		}
+	</script>
+
+	<h3>Javascript manipulate image</h3>
+	<img src="image/puspa.png" width="500" height="500" id="gambar">
+
+	<p>
+		<button type="button" onclick="mykisah(1)">Tekey sini deh</button>
+		<button type="button" onclick="mykisah(3)">Tekey sini jgk</button>
+	</p>
+
+	<h2>Alert box</h2>
+	<script>
+		{
+			alert("Hey Hey! \n Not Bad")
+		}
+	</script>
+
+	<footer></footer>
+
+</body>
+</html>

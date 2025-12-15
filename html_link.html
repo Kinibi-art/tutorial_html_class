@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Links</title>
+
+
+	<style>
+		a:link 
+		{
+			color: seagreen;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		a:visited
+		{
+			color: black;
+			background-color: khaki;
+		}
+
+		a:active
+		{
+			color: magenta;
+		}
+
+		a:hover
+		{
+			color: magenta;
+			background-color: khaki;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h3>Internal Links</h3>
+	<a href="basic_structure.html">HTML Basic Structure</a>
+
+	<h3>External Links</h3>
+	<a href="https://www.uitm.edu.my/index.php/en/#">Visit UiTM</a>
+
+	<h3>Target Attribute Blank</h3>
+	<a href="html_images.html" target="_blank">HTML Images</a>
+
+	<h3>Target Attribute Self</h3>
+	<a href="html_formatting.html">Uitm News</a>
+
+	<h3>Image as Link</h3>
+	<a href="html_formatting.html" target="_blank" title="Page of html formatting">
+		<img src="button/buto_2.png">
+	</a>
+
+	<h3>Button as Link</h3>
+	<button onclick="document.location='html_colors.html'">HTML Colors</button>
+
+
+</body>
+</html>
